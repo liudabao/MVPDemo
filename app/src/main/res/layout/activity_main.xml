@@ -62,5 +62,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/progressBar"
         android:layout_above="@+id/editText"
+        android:visibility="gone"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

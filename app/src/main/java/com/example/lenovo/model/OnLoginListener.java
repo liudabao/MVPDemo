@@ -5,7 +5,7 @@ package com.example.lenovo.model;
  */
 public interface OnLoginListener {
 
-    public void  onNetFail();
-    public void  onInputFail();
+    public void  onNetError();
+    public void  onIdOrPswError();
     public void  onSuccess();
 }

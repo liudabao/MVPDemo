@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements LoginView, View.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        init();
     }
 
     private void init(){
@@ -53,9 +54,18 @@ public class MainActivity extends AppCompatActivity implements LoginView, View.O
     }
 
     @Override
-    public void loginInputError() {
-        userName.setError("id error");
-        password.setError("psd error");
+    public void loginUserIdEmpty() {
+        userName.setError("user id is empty");
+    }
+
+    @Override
+    public void loginPasswordEmpty() {
+        password.setError("password is empty");
+    }
+
+    @Override
+    public void loginIdOrPsdError() {
+        Toast.makeText(getApplicationContext(), "user id or password is error", Toast.LENGTH_SHORT).show();
     }
 
     @Override

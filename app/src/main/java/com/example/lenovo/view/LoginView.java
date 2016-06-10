@@ -7,7 +7,9 @@ public interface LoginView {
 
     public void showProgerss();
     public void disProgress();
-    public void loginInputError();
+    public void loginUserIdEmpty();
+    public void loginPasswordEmpty();
+    public void loginIdOrPsdError();
     public void loginNetError();
     public void loginSuccess();
 
